@@ -6,9 +6,9 @@ void bubbleSort(int arr[], int n)
     if (n == 1)
         return;
 
-    // One pass of bubble sort. After
-    // this pass, the largest element
-    // is moved (or bubbled) to end.
+    /* One pass of bubble sort. After
+     this pass, the largest element
+     is moved (or bubbled) to end.*/
     for (int i=0; i<n-1; i++)
         if (arr[i] > arr[i+1])
             swap(arr[i], arr[i+1]);
@@ -20,9 +20,8 @@ void bubbleSort(int arr[], int n)
 int main()
 
 {
-    int n;int *arr;
+    int n;int arr[100];
     cin>>n;
-    arr=new int[n]; //dynamic initialization of the  array
     for(int i=0;i<n;i++)
         cin>>arr[i];
     bubbleSort(arr,n);
